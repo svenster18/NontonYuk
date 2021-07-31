@@ -1,0 +1,4 @@
+rootProject.name = "NontonYuk"
+include ':app'
+include ':core'
+include ':favorite'

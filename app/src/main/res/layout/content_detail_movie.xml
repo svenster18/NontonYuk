@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_poster"
+        android:layout_width="135dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="14dp"
+        android:src="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/poster_alita"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_poster"
+        app:layout_constraintTop_toTopOf="@+id/image_poster"
+        tools:text="@string/title" />
+
+    <TextView
+        android:id="@+id/text_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_title"
+        app:layout_constraintStart_toStartOf="@id/text_title"
+        app:layout_constraintEnd_toEndOf="@id/text_title"
+        tools:text="@string/year" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_year"
+        app:layout_constraintStart_toStartOf="@+id/text_year"
+        app:layout_constraintTop_toBottomOf="@+id/text_year"
+        tools:text="@string/date" />
+
+    <TextView
+        android:id="@+id/text_user_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_date"
+        app:layout_constraintStart_toStartOf="@+id/text_date"
+        app:layout_constraintTop_toBottomOf="@+id/text_date"
+        tools:text="@string/user_score" />
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/description"
+        android:textColor="@color/teal_700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/image_poster"
+        app:layout_constraintTop_toBottomOf="@+id/image_poster" />
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/text_desc"
+        app:layout_constraintTop_toBottomOf="@id/text_desc"
+        tools:text="@string/description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -59,7 +59,7 @@ class DetailTvShowActivity : AppCompatActivity() {
         detailContentBinding.textTitle.text = tvShow.title
         detailContentBinding.textYear.text = tvShow.year.toString()
         detailContentBinding.textDate.text = tvShow.date
-        detailContentBinding.textUserScore.text = "User Score ${tvShow.userScore}%"
+        detailContentBinding.textUserScore.text = getString(R.string.user_score_value, tvShow.userScore)
         detailContentBinding.textDescription.text = tvShow.description
 
         Glide.with(this)

@@ -1,8 +1,6 @@
 package com.mohamadrizki.nontonyuk.core.data
 
 import com.mohamadrizki.nontonyuk.core.data.source.local.LocalDataSource
-import com.mohamadrizki.nontonyuk.core.data.source.local.entity.MovieEntity
-import com.mohamadrizki.nontonyuk.core.data.source.local.entity.TvShowEntity
 import com.mohamadrizki.nontonyuk.core.data.source.remote.RemoteDataSource
 import com.mohamadrizki.nontonyuk.core.data.source.remote.network.ApiResponse
 import com.mohamadrizki.nontonyuk.core.data.source.remote.response.MovieItem

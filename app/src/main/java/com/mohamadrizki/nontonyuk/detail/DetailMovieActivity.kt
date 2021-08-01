@@ -57,7 +57,7 @@ class DetailMovieActivity : AppCompatActivity() {
         detailContentBinding.textTitle.text = movie.title
         detailContentBinding.textYear.text = movie.year.toString()
         detailContentBinding.textDate.text = movie.date
-        detailContentBinding.textUserScore.text = "User Score ${movie.userScore}%"
+        detailContentBinding.textUserScore.text = getString(R.string.user_score_value, movie.userScore)
         detailContentBinding.textDescription.text = movie.description
 
         Glide.with(this)

@@ -6,7 +6,7 @@ import com.mohamadrizki.nontonyuk.detail.DetailMovieViewModel
 import com.mohamadrizki.nontonyuk.detail.DetailTvShowViewModel
 import com.mohamadrizki.nontonyuk.movie.MovieViewModel
 import com.mohamadrizki.nontonyuk.tvshow.TvShowViewModel
-import org.koin.androidx.viewmodel.dsl.viewModel
+import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val useCaseModule = module {

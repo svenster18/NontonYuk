@@ -26,7 +26,7 @@ class MovieTvRepository(
             }
 
             override fun shouldFetch(data: List<Movie>?): Boolean =
-                data == null || data.isEmpty()
+                true
 
             override suspend fun createCall(): Flow<ApiResponse<List<MovieItem>>> =
                 remoteDataSource.getAllMovie()
@@ -46,7 +46,7 @@ class MovieTvRepository(
             }
 
             override fun shouldFetch(data: List<TvShow>?): Boolean =
-               data == null || data.isEmpty()
+               true
 
             override suspend fun createCall(): Flow<ApiResponse<List<TvItem>>> =
                 remoteDataSource.getAllTv()

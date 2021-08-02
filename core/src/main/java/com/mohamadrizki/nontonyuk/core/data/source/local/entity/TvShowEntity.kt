@@ -19,10 +19,10 @@ data class TvShowEntity(
     var rating: String,
 
     @ColumnInfo(name = "year")
-    var year: Long,
+    var year: String?,
 
     @ColumnInfo(name = "date")
-    var date: String,
+    var date: String?,
 
     @ColumnInfo(name = "genre")
     var genre: String,

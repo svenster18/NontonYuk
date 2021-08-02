@@ -57,7 +57,7 @@ class DetailTvShowActivity : AppCompatActivity() {
 
     private fun populateTv(tvShow: TvShow) {
         detailContentBinding.textTitle.text = tvShow.title
-        detailContentBinding.textYear.text = tvShow.year.toString()
+        detailContentBinding.textYear.text = tvShow.year
         detailContentBinding.textDate.text = tvShow.date
         detailContentBinding.textUserScore.text = getString(R.string.user_score_value, tvShow.userScore)
         detailContentBinding.textDescription.text = tvShow.description

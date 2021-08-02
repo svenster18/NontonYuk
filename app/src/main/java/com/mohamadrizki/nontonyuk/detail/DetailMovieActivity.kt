@@ -55,7 +55,7 @@ class DetailMovieActivity : AppCompatActivity() {
 
     private fun populateMovie(movie: Movie) {
         detailContentBinding.textTitle.text = movie.title
-        detailContentBinding.textYear.text = movie.year.toString()
+        detailContentBinding.textYear.text = movie.year
         detailContentBinding.textDate.text = movie.date
         detailContentBinding.textUserScore.text = getString(R.string.user_score_value, movie.userScore)
         detailContentBinding.textDescription.text = movie.description

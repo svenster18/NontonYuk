@@ -11,7 +11,7 @@ data class TvResponse(
 data class TvItem(
 
 	@field:SerializedName("first_air_date")
-	val firstAirDate: String,
+	val firstAirDate: String?,
 
 	@field:SerializedName("id")
 	val id: Int,

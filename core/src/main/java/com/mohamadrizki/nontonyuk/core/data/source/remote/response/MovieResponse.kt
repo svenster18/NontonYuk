@@ -26,5 +26,5 @@ data class MovieItem(
 	val posterPath: String,
 
 	@field:SerializedName("release_date")
-	val releaseDate: String
+	val releaseDate: String?
 )
